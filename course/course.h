@@ -15,10 +15,10 @@
  */
 typedef struct _course
 {
-  char name[100];
-  char code[10];
-  Student *students;
-  int total_students;
+  char name[100];     /**< The name of the course */
+  char code[10];      /**< The code of the course */
+  Student *students;  /**< A pointer to an array of the students in the course */
+  int total_students; /**< The number of students in the course */
 } Course;
 
 void enroll_student(Course *course, Student *student);
