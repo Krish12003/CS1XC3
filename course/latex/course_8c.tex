@@ -1,0 +1,115 @@
+\hypertarget{course_8c}{}\doxysection{course.\+c File Reference}
+\label{course_8c}\index{course.c@{course.c}}
+
+
+Implementations for the course library.  
+
+
+{\ttfamily \#include \char`\"{}course.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for course.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{course_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{course_8c_af3abbc650ef56ffff427a62dad63fc77}{enroll\+\_\+student}} (\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$course, \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Given pointer to a course and a pointer to a student, add the student to the course. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{course_8c_a99bf8b3f3c2d5dc7cf798ed445eaaa77}{print\+\_\+course}} (\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$course)
+\begin{DoxyCompactList}\small\item\em Print the details of a course, then all students in a course. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$ \mbox{\hyperlink{course_8c_ae0130f7ef7b879c9a790ee27a5ce21b7}{top\+\_\+student}} (\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$course)
+\begin{DoxyCompactList}\small\item\em Return the student with the highest average in the given course. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$ \mbox{\hyperlink{course_8c_a3f939f002e675839379b8d2dff044162}{passing}} (\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$course, int $\ast$total\+\_\+passing)
+\begin{DoxyCompactList}\small\item\em Return a pointer to an array of students who passed the course. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementations for the course library. 
+
+\begin{DoxyAuthor}{Author}
+Krish Krish (\href{mailto:krishk17@mcmaster.ca}{\texttt{ krishk17@mcmaster.\+ca}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/04-\/12 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{course_8c_af3abbc650ef56ffff427a62dad63fc77}\label{course_8c_af3abbc650ef56ffff427a62dad63fc77}} 
+\index{course.c@{course.c}!enroll\_student@{enroll\_student}}
+\index{enroll\_student@{enroll\_student}!course.c@{course.c}}
+\doxysubsubsection{\texorpdfstring{enroll\_student()}{enroll\_student()}}
+{\footnotesize\ttfamily void enroll\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$}]{course,  }\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Given pointer to a course and a pointer to a student, add the student to the course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & A pointer to a Course struct. \\
+\hline
+{\em student} & a pointer to a Student struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{course_8c_a3f939f002e675839379b8d2dff044162}\label{course_8c_a3f939f002e675839379b8d2dff044162}} 
+\index{course.c@{course.c}!passing@{passing}}
+\index{passing@{passing}!course.c@{course.c}}
+\doxysubsubsection{\texorpdfstring{passing()}{passing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}$\ast$ passing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$}]{course,  }\item[{int $\ast$}]{total\+\_\+passing }\end{DoxyParamCaption})}
+
+
+
+Return a pointer to an array of students who passed the course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & a pointer to a Course struct \\
+\hline
+{\em total\+\_\+passing} & a pointer to an integer that will be set to the number of students that passed the course.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to an array of students. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{course_8c_a99bf8b3f3c2d5dc7cf798ed445eaaa77}\label{course_8c_a99bf8b3f3c2d5dc7cf798ed445eaaa77}} 
+\index{course.c@{course.c}!print\_course@{print\_course}}
+\index{print\_course@{print\_course}!course.c@{course.c}}
+\doxysubsubsection{\texorpdfstring{print\_course()}{print\_course()}}
+{\footnotesize\ttfamily void print\+\_\+course (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$}]{course }\end{DoxyParamCaption})}
+
+
+
+Print the details of a course, then all students in a course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & A pointer to a Course struct. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{course_8c_ae0130f7ef7b879c9a790ee27a5ce21b7}\label{course_8c_ae0130f7ef7b879c9a790ee27a5ce21b7}} 
+\index{course.c@{course.c}!top\_student@{top\_student}}
+\index{top\_student@{top\_student}!course.c@{course.c}}
+\doxysubsubsection{\texorpdfstring{top\_student()}{top\_student()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}$\ast$ top\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$}]{course }\end{DoxyParamCaption})}
+
+
+
+Return the student with the highest average in the given course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & a pointer to a Course struct\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a student. 
+\end{DoxyReturn}

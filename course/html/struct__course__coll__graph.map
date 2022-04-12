@@ -1,0 +1,4 @@
+<map id="_course" name="_course">
+<area shape="rect" id="node1" title="A course struct that holds the name, code, total students and a list of students." alt="" coords="7,95,75,121"/>
+<area shape="rect" id="node2" href="$struct__student.html" title="A student struct that holds the name, id and grades of a student." alt="" coords="5,5,77,32"/>
+</map>

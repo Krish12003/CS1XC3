@@ -1,0 +1,133 @@
+\hypertarget{student_8h}{}\doxysection{student.\+h File Reference}
+\label{student_8h}\index{student.h@{student.h}}
+
+
+Header file for the student library.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{student_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__student}{\+\_\+student}}
+\begin{DoxyCompactList}\small\item\em A student struct that holds the name, id and grades of a student. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__student}{\+\_\+student}} \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}
+\begin{DoxyCompactList}\small\item\em A student struct that holds the name, id and grades of a student. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{student_8h_a1ee4302d01d8908db57e238f5f9dd9f5}{add\+\_\+grade}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student, double grade)
+\begin{DoxyCompactList}\small\item\em Add a grade to a student\textquotesingle{}s grade array. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{student_8h_a3efb000301e4e0c8e68930bc93e0958e}{average}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Given a pointer to a student, and return the average of the student\textquotesingle{}s grades. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{student_8h_a4d964bf73eb1b291728dbf7380a9e6ab}{print\+\_\+student}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Print the given student\textquotesingle{}s name, id, grades, and average. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$ \mbox{\hyperlink{student_8h_a4aa2c655fdf24df90c3e85b18f605b9a}{generate\+\_\+random\+\_\+student}} (int grades)
+\begin{DoxyCompactList}\small\item\em Generates a random student with random grades. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the student library. 
+
+\begin{DoxyAuthor}{Author}
+Krish Krish (\href{mailto:krishk17@mcmaster.ca}{\texttt{ krishk17@mcmaster.\+ca}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/04-\/12 
+\end{DoxyDate}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{student_8h_ac91ec92866bb82e1ee36c75280929c43}\label{student_8h_ac91ec92866bb82e1ee36c75280929c43}} 
+\index{student.h@{student.h}!Student@{Student}}
+\index{Student@{Student}!student.h@{student.h}}
+\doxysubsubsection{\texorpdfstring{Student}{Student}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__student}{\+\_\+student}} \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}}
+
+
+
+A student struct that holds the name, id and grades of a student. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{student_8h_a1ee4302d01d8908db57e238f5f9dd9f5}\label{student_8h_a1ee4302d01d8908db57e238f5f9dd9f5}} 
+\index{student.h@{student.h}!add\_grade@{add\_grade}}
+\index{add\_grade@{add\_grade}!student.h@{student.h}}
+\doxysubsubsection{\texorpdfstring{add\_grade()}{add\_grade()}}
+{\footnotesize\ttfamily void add\+\_\+grade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student,  }\item[{double}]{grade }\end{DoxyParamCaption})}
+
+
+
+Add a grade to a student\textquotesingle{}s grade array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & a pointer to a Student struct \\
+\hline
+{\em grade} & The grade to add to the student\textquotesingle{}s list of grades. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{student_8h_a3efb000301e4e0c8e68930bc93e0958e}\label{student_8h_a3efb000301e4e0c8e68930bc93e0958e}} 
+\index{student.h@{student.h}!average@{average}}
+\index{average@{average}!student.h@{student.h}}
+\doxysubsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily double average (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Given a pointer to a student, and return the average of the student\textquotesingle{}s grades. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & a pointer to a Student struct\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a Student struct. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{student_8h_a4aa2c655fdf24df90c3e85b18f605b9a}\label{student_8h_a4aa2c655fdf24df90c3e85b18f605b9a}} 
+\index{student.h@{student.h}!generate\_random\_student@{generate\_random\_student}}
+\index{generate\_random\_student@{generate\_random\_student}!student.h@{student.h}}
+\doxysubsubsection{\texorpdfstring{generate\_random\_student()}{generate\_random\_student()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}$\ast$ generate\+\_\+random\+\_\+student (\begin{DoxyParamCaption}\item[{int}]{grades }\end{DoxyParamCaption})}
+
+
+
+Generates a random student with random grades. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grades} & The number of grades to generate for the student.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a Student struct. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{student_8h_a4d964bf73eb1b291728dbf7380a9e6ab}\label{student_8h_a4d964bf73eb1b291728dbf7380a9e6ab}} 
+\index{student.h@{student.h}!print\_student@{print\_student}}
+\index{print\_student@{print\_student}!student.h@{student.h}}
+\doxysubsubsection{\texorpdfstring{print\_student()}{print\_student()}}
+{\footnotesize\ttfamily void print\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Print the given student\textquotesingle{}s name, id, grades, and average. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & a pointer to a Student struct \\
+\hline
+\end{DoxyParams}

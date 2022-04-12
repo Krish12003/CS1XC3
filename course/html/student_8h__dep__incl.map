@@ -1,0 +1,7 @@
+<map id="student.h" name="student.h">
+<area shape="rect" id="node1" title="Header file for the student library." alt="" coords="98,5,174,32"/>
+<area shape="rect" id="node2" href="$course_8h.html" title="Header file for the course library." alt="" coords="51,80,123,107"/>
+<area shape="rect" id="node5" href="$student_8c.html" title="Implementations for the student library." alt="" coords="147,80,223,107"/>
+<area shape="rect" id="node3" href="$course_8c.html" title="Implementations for the course library." alt="" coords="5,155,77,181"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="The main file that uses the course library." alt="" coords="101,155,163,181"/>
+</map>

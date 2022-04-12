@@ -1,0 +1,114 @@
+\hypertarget{student_8c}{}\doxysection{student.\+c File Reference}
+\label{student_8c}\index{student.c@{student.c}}
+
+
+Implementations for the student library.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}student.\+h\char`\"{}}\newline
+Include dependency graph for student.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{student_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{student_8c_a1ee4302d01d8908db57e238f5f9dd9f5}{add\+\_\+grade}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student, double grade)
+\begin{DoxyCompactList}\small\item\em Add a grade to a student\textquotesingle{}s grade array. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{student_8c_a3efb000301e4e0c8e68930bc93e0958e}{average}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Given a pointer to a student, and return the average of the student\textquotesingle{}s grades. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{student_8c_a4d964bf73eb1b291728dbf7380a9e6ab}{print\+\_\+student}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Print the given student\textquotesingle{}s name, id, grades, and average. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$ \mbox{\hyperlink{student_8c_a4aa2c655fdf24df90c3e85b18f605b9a}{generate\+\_\+random\+\_\+student}} (int grades)
+\begin{DoxyCompactList}\small\item\em Generates a random student with random grades. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementations for the student library. 
+
+\begin{DoxyAuthor}{Author}
+Krish Krish (\href{mailto:krishk17@mcmaster.ca}{\texttt{ krishk17@mcmaster.\+ca}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/04-\/12 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{student_8c_a1ee4302d01d8908db57e238f5f9dd9f5}\label{student_8c_a1ee4302d01d8908db57e238f5f9dd9f5}} 
+\index{student.c@{student.c}!add\_grade@{add\_grade}}
+\index{add\_grade@{add\_grade}!student.c@{student.c}}
+\doxysubsubsection{\texorpdfstring{add\_grade()}{add\_grade()}}
+{\footnotesize\ttfamily void add\+\_\+grade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student,  }\item[{double}]{grade }\end{DoxyParamCaption})}
+
+
+
+Add a grade to a student\textquotesingle{}s grade array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & a pointer to a Student struct \\
+\hline
+{\em grade} & The grade to add to the student\textquotesingle{}s list of grades. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{student_8c_a3efb000301e4e0c8e68930bc93e0958e}\label{student_8c_a3efb000301e4e0c8e68930bc93e0958e}} 
+\index{student.c@{student.c}!average@{average}}
+\index{average@{average}!student.c@{student.c}}
+\doxysubsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily double average (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Given a pointer to a student, and return the average of the student\textquotesingle{}s grades. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & a pointer to a Student struct\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a Student struct. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{student_8c_a4aa2c655fdf24df90c3e85b18f605b9a}\label{student_8c_a4aa2c655fdf24df90c3e85b18f605b9a}} 
+\index{student.c@{student.c}!generate\_random\_student@{generate\_random\_student}}
+\index{generate\_random\_student@{generate\_random\_student}!student.c@{student.c}}
+\doxysubsubsection{\texorpdfstring{generate\_random\_student()}{generate\_random\_student()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}$\ast$ generate\+\_\+random\+\_\+student (\begin{DoxyParamCaption}\item[{int}]{grades }\end{DoxyParamCaption})}
+
+
+
+Generates a random student with random grades. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grades} & The number of grades to generate for the student.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a Student struct. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{student_8c_a4d964bf73eb1b291728dbf7380a9e6ab}\label{student_8c_a4d964bf73eb1b291728dbf7380a9e6ab}} 
+\index{student.c@{student.c}!print\_student@{print\_student}}
+\index{print\_student@{print\_student}!student.c@{student.c}}
+\doxysubsubsection{\texorpdfstring{print\_student()}{print\_student()}}
+{\footnotesize\ttfamily void print\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Print the given student\textquotesingle{}s name, id, grades, and average. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & a pointer to a Student struct \\
+\hline
+\end{DoxyParams}
